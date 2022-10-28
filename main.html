@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <div class="title-container">
+                <h1>Payment Details</h1>
+                <h2>Enter your payment details below to purchase.</h2>
+            </div>
+            <div class="input-container">
+                <div class="field-container">
+                    <label for="firstname">First Name</label>
+                    <input id="firstname" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="Micheal"> 
+                </div>
+                <div class="field-container">
+                    <label for="lastname">Last Name</label>
+                    <input id="lastname" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="Browk">
+                </div>
+                <div class="field-container">
+                    <label for="email">Email</label>
+                    <input id="email" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="micheal.browk@outlook.com">
+                </div>
+                <div class="field-container">
+                    <label for="billingaddress">Billing Address</label>
+                    <input id="billingaddress" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="123 Street">
+                </div>
+                <div class="field-container">
+                    <label for="suite">Apt, suite, etc</label>
+                    <input id="suite" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="Optional">
+                </div>
+                <div class="input-container-duo">
+                    <div class="field-container duo-container">
+                        <label for="state">State</label>
+                        <input style="text-transform: uppercase; " id="state" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="PA" maxlength = "2">
+                    </div>
+                    <div class="field-container duo-container">
+                        <label for="zipcode">Zip Code</label>
+                        <input id="zipcode" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="11111" maxlength = "5">
+                    </div>
+                </div>
+                <div class="field-container">
+                    <label for="country">Country</label>
+                    <input id="country" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="United States">
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div class="card-container">
+                    <div class="card">
+                        <div class="card-top">
+                            <h1>Micheal Browk</h1>
+                            <input id="card-cvv" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="••4" maxlength = "3">
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-number-container">
+                                <input id="card-number-one" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="0123" maxlength = "4">
+                                <input id="card-number-two" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="4567" maxlength = "4">
+                                <input id="card-number-three" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="8910" maxlength = "4">
+                                <input id="card-number-four" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="1112" maxlength = "4">
+                            </div>
+                            <div class="card-date-container">
+                                <input id="card-month" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="01" maxlength = "2">
+                                <span>/</span>
+                                <input id="card-year" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="25" maxlength = "2">
+                            </div>
+                            <img style="margin-left: 30px;" src="mastercard.png" alt="">
+                        </div>
+                    </div>
+                <button class="complete-payment">Complete payment - $42</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
